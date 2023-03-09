@@ -1,6 +1,6 @@
 function validateform() {
   let err = [];
-  var storedata = {fname:'',em:'',ms:''};
+  var storedata = {fullname:'',email:'',message:''};
   let firstname = document.formval.fname;
   let maile = document.formval.email;
   let message = document.formval.msg;
@@ -41,7 +41,7 @@ if(maile.value!='')
     }
     else
     {
-        storedata.em=maile.value;
+        storedata.email=maile.value;
         
     }
 }
@@ -59,9 +59,9 @@ if(message.value!='')
   }
   else
   {
-    storedata.fname=firstname.value;
-    storedata.em=maile.value;
-    storedata.ms=message.value;
+    storedata.fullname=firstname.value;
+    storedata.email=maile.value;
+    storedata.message=message.value;
     console.log(storedata);
   }
   
